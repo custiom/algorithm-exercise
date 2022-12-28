@@ -1,4 +1,4 @@
-package baekjoon
+package main.kotlin.baekjoon
 
 fun main(args: Array<String>) {
     val infoArray = readLine()!!.trim().split(" ")
@@ -18,7 +18,6 @@ fun sort(arr: MutableList<MutableList<Int>>): Int {
         list[i] = list[i].toMutableList().sortedBy { it }.toMutableList()
     }
     for(i: Int in list.indices) {
-        list[i]
         for(j: Int in i+1 until list.size) {
             var index = 0
             for(k: Int in 0 until  list[i].size) {
